@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3: DevDash - Advanced JS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Dev<span class="highlight">Dash</span></h1>
+            <p>Task 3: Advanced JS & API Integration</p>
+        </div>
+    </header>
+
+    <div class="main-container">
+
+        <section class="card api-section">
+            <div class="card-header">
+                <h2>☕ Daily Dev Joke</h2>
+                <span class="badge">API Integrated</span>
+            </div>
+            <div id="joke-container" class="joke-box">
+                <p id="setup">Loading joke...</p>
+                <p id="punchline" class="fade-in">...</p>
+            </div>
+            <button id="new-joke-btn" class="btn primary-btn">Get Another Joke</button>
+        </section>
+
+        <section class="card quiz-section">
+            <div class="card-header">
+                <h2>🧠 Tech Trivia</h2>
+                <span class="badge" id="score-badge">Score: 0</span>
+            </div>
+
+            <div id="quiz-wrapper">
+                <div class="question-box">
+                    <p id="question-text">Question goes here...</p>
+                </div>
+                <div class="options-grid" id="options-container">
+                </div>
+                <p id="feedback" class="feedback-text"></p>
+            </div>
+
+            <button id="next-btn" class="btn secondary-btn hidden">Next Question</button>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Built for ApexPlanet Internship | Session 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
